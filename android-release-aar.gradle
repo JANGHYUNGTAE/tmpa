@@ -27,6 +27,7 @@ task androidSourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
 }
 
+/*
 publishing {
     repositories.mavenDeployer {
         pom.groupId = groupId
@@ -52,7 +53,7 @@ publishing {
         repository(url: "file://${localReleaseDest}")
     }
 }
-
+*/
 task zipRelease(type: Zip) {
     from localReleaseDest
     destinationDir buildDir
